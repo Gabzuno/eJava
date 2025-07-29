@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class day2 {
+public class Day2 {
     public static void main(String[] args) {
         try (
                 // practicing primitive data types
