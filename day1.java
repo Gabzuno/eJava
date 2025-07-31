@@ -29,7 +29,7 @@ public class Day1 {
             }
 
             System.out.printf(
-                    "So, here's what you said if i'm correct.\n Your name is %s and you are %d years old.\n The reason why you started to leann java is %s. Is the right? ",
+                    "So, here's what you said if i'm correct.\n Your name is %s and you are %d years old.\n The reason why you started to leann java is %s. Is that right? ",
                     name, age, reason);
             String ans = sc.nextLine();
             if (ans.toLowerCase() == "yes") {

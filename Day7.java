@@ -18,17 +18,17 @@ public class Day7 {
                     pass = sc.nextLine();
 
                     if (uname.equalsIgnoreCase(defuname) && pass.equals(defpass)) {
-                        System.out.println("\n✅ LOGIN SUCCESSFUL!");
+                        System.out.println("\nLOGIN SUCCESSFUL!");
                         success = true;
                         break;
                     } else {
                         attempt -= 1;
-                        System.out.println("\n❌ LOGIN FAILED!");
+                        System.out.println("\nLOGIN FAILED!");
                         System.out.println("Tries left: " + attempt);
                     }
 
                     if (!success) {
-                        System.out.println("\n🚫 You reached the max attempts!");
+                        System.out.println("\nYou reached the max attempts!");
                     }
                 }
 
