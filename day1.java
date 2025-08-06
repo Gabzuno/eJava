@@ -19,20 +19,20 @@ public class Day1 {
                 System.out.println("Wow, a senior i see!");
             }
             sc.nextLine();
-            System.out.print("So tell me, What's the reason why you wanna start learning Java Programming?");
+            System.out.print("So tell me, What's the reason why you wanna start learning Java Programming? ");
             String reason = sc.nextLine();
             boolean found = reason.toLowerCase().contains("improve");
             if (found) {
-                System.out.println("That's great to know! Improving to become better!");
+                System.out.println("\n That's great to know! Improving to become better!");
             } else {
-                System.out.println("I understand, that's very good answer.");
+                System.out.println("\n I understand, that's very good answer.");
             }
 
             System.out.printf(
                     "So, here's what you said if i'm correct.\n Your name is %s and you are %d years old.\n The reason why you started to leann java is %s. Is that right? ",
                     name, age, reason);
             String ans = sc.nextLine();
-            if (ans.toLowerCase() == "yes") {
+            if (ans.toLowerCase().equals("yes")) {
                 sc.close();
             } else {
                 System.out.println("\nSorry for that!");

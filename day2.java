@@ -10,10 +10,18 @@ public class Day2 {
             double height = sc.nextDouble();
             System.out.print("Please Enter your Weight(kg): ");
             double weight = sc.nextDouble();
+
+            if (height <= 0 || weight <= 0) {
+                System.out.println("Height and Weight must be positive numbers!");
+                return;
+            }
+
             double BMI = weight / (height * height);
             System.out.printf("Your BMI is %.2f\n", BMI);
+
             if (BMI >= 30) {
                 System.out.println("You're in the Obese range!");
+                System.out.println("Recommendation: Consult a healthcare provider.");
             } else if (BMI >= 25 && BMI < 30) {
                 System.out.println("You're in the Overweight range!");
             } else if (BMI < 25 && BMI >= 18.5) {
