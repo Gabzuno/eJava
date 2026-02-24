@@ -1,28 +1,16 @@
 package OOP;
 
 // Inheritance
-public class fruit implements itemStuff{
+public class fruit extends item{
     private String Type;
-    private String name;
-    private int quantity;
 
     public fruit(String name, int quantity, String type) {
+        super(name, quantity);
         this.Type = type;
-        this.name = name;
-        this.quantity = quantity;
     }
 
     public String getType(){
         return Type;
-    }
-
-    // Methods
-    public String getName() {
-        return name;
-    }
-
-    public int getQuantity() {
-        return quantity;
     }
 
     @Override
