@@ -1,7 +1,7 @@
 package OOP;
 
 // Encapsulation
-public class item {
+public abstract class item {
     // Attributes
     private String name;
     private int quantity;
@@ -21,8 +21,5 @@ public class item {
         return quantity;
     }
 
-    @Override
-    public String toString(){
-        return "Item: " + name + ", Quantity: " + quantity;
-    }
+    public abstract void displayInfo();
 }

@@ -26,7 +26,7 @@ public class inventory {
     // Dynaic Polymorphism - Runtime Polymorphism
     public void displayInventory(){
         for(item item : items){
-            System.out.println(item.toString());
+            item.displayInfo();
         }
     }
 

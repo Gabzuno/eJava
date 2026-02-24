@@ -18,8 +18,10 @@ public class weapon extends item {
         return type;
     }
 
+    // public String displayInfo() - for console logging, UI, System.out.println, etc.
+    // public void displayInfo() - for more complex display logic, UI rendering, etc.
     @Override
-    public String toString(){
-        return "Weapon: " + getName() + ", Quantity: " + getQuantity() + ", Damage: " + damage + ", Type: " + type;
+    public void displayInfo(){
+        System.out.println("Weapon: " + getName() + ", Quantity: " + getQuantity() + ", Damage: " + damage + ", Type: " + type);
     }
 }
